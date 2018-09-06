@@ -20,6 +20,7 @@ services:
     volumes:
       - ./htdocs:/var/www/html
       - ./services/php/conf.d/custom-php.ini:/usr/local/etc/php/conf.d/zz-custom.ini
+      - ./services/php/conf.d/ioncube-php.ini:/usr/local/etc/php/conf.d/00-ioncube.ini
       - ./services/php/.bashrc:/root/.bashrc
     env_file: .env
   mariadb:

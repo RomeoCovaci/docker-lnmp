@@ -7,8 +7,11 @@ Features
 --------
 
 -	**PHP-FPM 7.2**
+-	ionCube PHP Loader
 -	Zend OPcache
 -	Xdebug (Set breakpoint in code with function `xdebug_break()`\)
+-	Composer
+-	Imagemagick
 -	**MariaDB** (Container is stateless and data is mapped to `./mysql/data` directory)
 -	phpMyAdmin
 -	Default locale `de_DE.UTF-8`
@@ -20,6 +23,7 @@ Configuration
 -	Rename `example.env` to `.env` and edit to your needs
 -	Remove all files and directories from `./htdocs`
 -	Download and copy your web project to `./htdocs`
+-	Configure your web project with the defined ENV vars (e.g. `getenv('MYSQL_PASSWORD')`)
 
 Usage
 -----
