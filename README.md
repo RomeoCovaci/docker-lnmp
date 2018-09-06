@@ -38,7 +38,7 @@ Usage
 docker-compose build
 ```
 
-#### Run
+### Run
 
 ```
 docker-compose up
@@ -52,7 +52,7 @@ docker-compose up -d
 
 > Param `-d` runs container in background (detach)
 
-#### Bash into
+### Bash into
 
 > Replace `docker-lnmp_*` with your container names
 
@@ -67,7 +67,7 @@ Database backup
 $ docker exec docker-lnmp_mariadb_1 sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
 ```
 
-#### Stop
+### Stop
 
 ```
 docker-compose down
