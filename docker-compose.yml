@@ -19,8 +19,7 @@ services:
       - db
     volumes:
       - ./htdocs:/var/www/html
-      - ./php/conf.d/custom-php.ini:/usr/local/etc/php/conf.d/zzzzzz-custom.ini
-      - ./php/conf.d/custom-fpm.ini:/usr/local/etc/php-fpm.d/zzzzzz-custom.ini
+      - ./php/conf.d/custom-php.ini:/usr/local/etc/php/conf.d/zz-custom.ini
       - ./php/.bashrc:/root/.bashrc
     env_file: .env
   db:

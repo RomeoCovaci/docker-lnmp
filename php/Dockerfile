@@ -55,6 +55,9 @@ RUN docker-php-ext-install -j$(nproc) \
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
 
+# replace fpm port because of xdebug port 9000
+RUN sed -i 's/9000/9001/' /usr/local/etc/php-fpm.d/zz-docker.conf
+
 # cleanup
 RUN apt-get clean \
     && rm -fr /var/lib/apt/lists/* \
