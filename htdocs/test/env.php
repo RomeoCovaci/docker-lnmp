@@ -6,9 +6,9 @@ $password = getenv('MYSQL_PASSWORD');
 $database = getenv('MYSQL_DATABASE');
 
 echo "
---- MYSQL
-host: $servername
-user: $username
-pass: $password
-name: $database
+MYSQL ENV vars ::
+host:$servername
+user:$username
+pass:$password
+name:$database
 ";

@@ -1,5 +1,4 @@
 <?php
-header('Content-Type: text/plain');
 
 $servername = getenv('MYSQL_HOST');
 $username = getenv('MYSQL_USER');
