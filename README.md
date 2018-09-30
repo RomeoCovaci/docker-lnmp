@@ -12,7 +12,7 @@ Features
 -	Xdebug (Set breakpoint in code with function `xdebug_break()`\)
 -	Composer
 -	Imagemagick
--	**MariaDB** (Container is stateless and data is mapped to `./mysql/data` directory)
+-	**MariaDB** (Container is stateless and data is mapped to `./services/mariadb/data` directory)
 -	phpMyAdmin
 -	Default locale `de_DE.UTF-8`
 -	Default localtime `Europe/Berlin`
